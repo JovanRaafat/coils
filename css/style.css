@@ -1,0 +1,199 @@
+:root {
+	--bg: #1f2227;
+	--card: #2a2e35;
+	--card-border: #4d3d33;
+	--copper: #d98b5f;
+	--copper-dark: #b86f45;
+	--text: #f5f5f5;
+	--muted: #a9aeb7;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "Tahoma", "Segoe UI", sans-serif;
+	background: var(--bg);
+	color: var(--text);
+	line-height: 1.6;
+}
+
+/* الهيدر */
+.topbar {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	padding: 10px 20px;
+	border-bottom: 1px solid var(--card-border);
+	position: sticky;
+	top: 0;
+	background: rgba(31, 34, 39, 0.94);
+	z-index: 10;
+}
+.logo {
+	height: 56px;
+	width: 56px;
+	object-fit: contain;
+	mix-blend-mode: lighten;
+}
+.brand {
+	color: var(--copper);
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+.wa-btn {
+	margin-inline-start: auto;
+	padding: 8px 18px;
+	background: var(--copper);
+	color: #000;
+	border-radius: 8px;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 0.95rem;
+	white-space: nowrap;
+	transition: 0.2s;
+}
+.wa-btn:hover {
+	background: var(--copper-dark);
+}
+
+/* البانر */
+.hero {
+	text-align: center;
+	padding: 60px 20px;
+	background: radial-gradient(circle at top, #43302a 0%, #1f2227 70%);
+}
+.hero h1 {
+	color: var(--copper);
+	font-size: 2rem;
+	margin-bottom: 8px;
+}
+.hero p {
+	color: var(--muted);
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+
+/* .btn {
+	display: inline-block;
+	padding: 10px 26px;
+	border: 2px solid var(--copper);
+	color: var(--copper);
+	border-radius: 8px;
+	text-decoration: none;
+	font-weight: bold;
+	transition: 0.2s;
+} */
+.btn:hover {
+	background: var(--copper);
+	color: #000;
+}
+
+/* السكشن */
+.section {
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 40px 16px;
+}
+.section h2 {
+	color: var(--copper);
+	margin-bottom: 16px;
+}
+
+.count {
+	color: var(--muted);
+	margin-bottom: 16px;
+	font-size: 0.9rem;
+}
+
+/* الشبكة والكروت */
+.grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+	gap: 18px;
+}
+
+.card {
+	background: var(--card);
+	border: 1px solid var(--card-border);
+	border-radius: 12px;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	transition: 0.2s;
+}
+.card:hover {
+	transform: translateY(-4px);
+	border-color: var(--copper);
+}
+
+.card-img {
+	height: 160px;
+	background: #23262c;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: var(--muted);
+	font-size: 0.9rem;
+}
+.card-img img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.card-body {
+	padding: 14px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	flex: 1;
+}
+.card-name {
+	font-size: 1.05rem;
+}
+.card-price {
+	color: var(--copper);
+	font-size: 1.3rem;
+	font-weight: bold;
+}
+
+.specs {
+	list-style: none;
+	font-size: 0.88rem;
+	color: var(--muted);
+}
+.specs li {
+	display: flex;
+	justify-content: space-between;
+	padding: 3px 0;
+	border-bottom: 1px dashed #3f434b;
+}
+.specs span:last-child {
+	color: var(--text);
+}
+
+.order {
+	margin-top: auto;
+	text-align: center;
+	padding: 10px;
+	background: var(--copper);
+	color: #000;
+	border-radius: 8px;
+	text-decoration: none;
+	font-weight: bold;
+}
+.order:hover {
+	background: var(--copper-dark);
+}
+
+.footer {
+	text-align: center;
+	padding: 24px;
+	color: var(--muted);
+	border-top: 1px solid var(--card-border);
+}
