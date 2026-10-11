@@ -288,7 +288,7 @@ const coils = [
 		elbows: 4,
 	},
 	{
-		name: "سامسونج كابينة 20سم",
+		name: "سامسونج كابينة 5كوع",
 		price: 900,
 		width: 20,
 		length: "",
@@ -297,7 +297,7 @@ const coils = [
 		elbows: 5,
 	},
 	{
-		name: "سامسونج كابينة 20سم",
+		name: "سامسونج كابينة 6كوع",
 		price: 900,
 		width: 20,
 		length: "",
@@ -306,7 +306,7 @@ const coils = [
 		elbows: 6,
 	},
 	{
-		name: "سامسونج كابينة 20سم",
+		name: "سامسونج كابينة 7كوع",
 		price: 900,
 		width: 20,
 		length: "",
@@ -315,7 +315,7 @@ const coils = [
 		elbows: 7,
 	},
 	{
-		name: "سامسونج كابينة 20سم",
+		name: "سامسونج كابينة 9كوع",
 		price: 900,
 		width: 20,
 		length: "",
